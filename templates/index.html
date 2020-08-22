@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social Distancing Violation</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bottstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.css"></script>
+    <script src="https://cdn.bootcss.com/jquery.js/3.3.1/jquery.min.css"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/css/bottstrap.min.css" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <style>
+      .bg-dark{
+        background-color: #42678c!important;
+      }
+      #result{
+        color: #0a1c4ed1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-warning">
+      <div class="container">
+        <a href="#" class="navbar-brand">Social Distance Violation Detector</a>
+      </div>
+    </nav>
+    <div class="navbar navbar-dark bg-info">
+
+      <div class="comtainer">
+        <div class="row">
+          <div class="col-sm-8 bd">
+            <h3>Violation Stream</h3>
+            <p>COVID-19 spread is emotionally challenging for many people, changing day-to-day life in unprecedented ways. All sections of society should play a vital role to protect themselves and each other and help prevent further spread of the disease. Social-distancing is an important way to slow down the spread of infectious diseases. People are asked to limit their interactions with each other, reducing the chances of the disease being spread with physical or close contact.</p>
+            <img src="{{url_for('video_feed')}}" style="height:200px" class="img-rounded" alt="gesture">
+          </div>
+
+        </div>
+
+    </div>
+  </body>
+
+  </html>
